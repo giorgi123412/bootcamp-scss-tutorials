@@ -38,6 +38,9 @@ body {
     font-size: 14px;
     line-height: 24px;
     padding: 8px 37px;
+    border: none;
+    cursor: pointer;
+
     &.medium {
         font-size: 18px;
         padding: 13px 47px;
@@ -46,13 +49,28 @@ body {
         font-size: 26px;
         padding: 27px 109px 29px 93px;
     }
-    &.x-large{
+    &.x-large {
         font-size: 36px;
         padding: 38px 120px 38px 103px;
     }
 
-    &:hover{
+    &:hover {
         background-color: $color-3;
+    }
+
+    &.round {
+        &-3 {
+            border-radius:3px;
+        }
+        &-7 {
+            border-radius:7px;
+        }
+        &-12 {
+            border-radius:12px;
+        }
+        &-20 {
+            border-radius:20px;
+        }
     }
 }
 
