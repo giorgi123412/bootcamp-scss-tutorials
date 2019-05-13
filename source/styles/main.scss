@@ -1,3 +1,5 @@
+@import 'reset';
+
 $color-1:#F39705;
 $color-2:#E25611;
 $color-3:#9A2C4A;
@@ -6,7 +8,7 @@ $color-5:#3D4C53;
 $color-6:#62A783;
 $color-7:#F82F54;
 $color-8:#8FC567;
-$color-9:#ffffff;
+$color-9:#FFFFFF;
 $color-10:#222533;
 
 * {
@@ -33,76 +35,77 @@ body {
             margin-right: 0px;
         }
     }
+    .btn {
+        background-color: $color-1;
+        color: $color-9;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'lato';
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 8px 37px;
+        border: none;
+        cursor: pointer;
+    
+        &.medium {
+            font-size: 18px;
+            padding: 13px 47px;
+        }
+        &.large {
+            font-size: 26px;
+            padding: 27px 109px 29px 93px;
+        }
+        &.x-large {
+            font-size: 36px;
+            padding: 38px 120px 38px 103px;
+        }
+    
+        &.round {
+            &-3 {
+                border-radius:3px;
+            }
+            &-7 {
+                border-radius:7px;
+            }
+            &-12 {
+                border-radius:12px;
+            }
+            &-20 {
+                border-radius:20px;
+            }
+        }
+        &.bg-color {
+            &-1{
+                background-color: $color-1;
+            }
+            &-2{
+                background-color: $color-2;
+            }
+            &-3{
+                background-color: $color-3;
+            }
+            &-4{
+                background-color: $color-4;
+            }
+            &-5{
+                background-color: $color-5;
+            }
+            &-6{
+                background-color: $color-6;
+            }
+            &-7{
+                background-color: $color-7;
+            }
+            &-8{
+                background-color: $color-8;
+            }
+        }
+        &:hover {
+            background-color: $color-10;
+        }
+    }
 }
 
-.btn {
-    background-color: $color-1;
-    color: $color-9;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'lato';
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 24px;
-    padding: 8px 37px;
-    border: none;
-    cursor: pointer;
 
-    &.medium {
-        font-size: 18px;
-        padding: 13px 47px;
-    }
-    &.large {
-        font-size: 26px;
-        padding: 27px 109px 29px 93px;
-    }
-    &.x-large {
-        font-size: 36px;
-        padding: 38px 120px 38px 103px;
-    }
-
-    &.round {
-        &-3 {
-            border-radius:3px;
-        }
-        &-7 {
-            border-radius:7px;
-        }
-        &-12 {
-            border-radius:12px;
-        }
-        &-20 {
-            border-radius:20px;
-        }
-    }
-    &.bg-color {
-        &-1{
-            background-color: $color-1;
-        }
-        &-2{
-            background-color: $color-2;
-        }
-        &-3{
-            background-color: $color-3;
-        }
-        &-4{
-            background-color: $color-4;
-        }
-        &-5{
-            background-color: $color-5;
-        }
-        &-6{
-            background-color: $color-6;
-        }
-        &-7{
-            background-color: $color-7;
-        }
-        &-8{
-            background-color: $color-8;
-        }
-    }
-    &:hover {
-        background-color: $color-10;
-    }
-}
 
