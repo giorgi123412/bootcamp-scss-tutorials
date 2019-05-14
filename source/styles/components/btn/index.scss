@@ -1,4 +1,5 @@
-@import 'size';
+@import'size';
+
 .btn {
     background-color: $color-1;
     color: $color-9;
@@ -6,56 +7,56 @@
     text-transform: uppercase;
     font-family: 'lato';
     font-weight: 900;
+    @include size(14px, 11px, 37px, 10.8px, 37.1px);
+    font-size: 14px;
     line-height: 24px;
-    @include size(14px 8px 37px 8px 37px );
+    padding: 8px 37px;
     border: none;
     cursor: pointer;
     &.medium {
-        @include size(18px 13px 47px 13px 47px );
+        font-size: 18px;
+        padding: 13px 47px;
+        @include size(18px, 14px, 46px, 14px, 46px);
     }
     &.large {
-        @include size(26px 27px 109px 27px 109px);
-
+        @include size(26px, 23px, 92px, 23px, 94px);
+    }
     &.x-large {
-        @include size(36px 38px 120px 38px 103px);
+        @include size(36px, 27px,102px, 27px, 103px);
     }
     &.round {
-        &-3 {
-            border-radius:3px;
-        }
-        &-7 {
-            border-radius:7px;
-        }
-        &-12 {
-            border-radius:12px;
-        }
-        &-20 {
-            border-radius:20px;
+        $rounds:(3, 7, 12, 20);
+
+        @each $round in $rounds {
+            &-#{$round}{
+                border-radius: $round +px;
+            }
         }
     }
+    
     &.bg-color {
-        &-1{
+        &-1 {
             background-color: $color-1;
         }
-        &-2{
+        &-2 {
             background-color: $color-2;
         }
-        &-3{
+        &-3 {
             background-color: $color-3;
         }
-        &-4{
+        &-4 {
             background-color: $color-4;
         }
-        &-5{
+        &-5 {
             background-color: $color-5;
         }
-        &-6{
+        &-6 {
             background-color: $color-6;
         }
-        &-7{
+        &-7 {
             background-color: $color-7;
         }
-        &-8{
+        &-8 {
             background-color: $color-8;
         }
     }
